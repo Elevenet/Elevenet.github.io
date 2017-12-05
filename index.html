@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<meta charset="UTF-8">
-	<title>WebWiki</title>
+	<title>Supreme_Boy</title>
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -10,65 +11,183 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
 	<style>
+
 		body{
-			background-color: black;
-			color: white;
+			background-color: #4169E1;
+			color: black;
 			text-align: center;
-			font-size: 18px;
+			font-size: 23px;
 		}
+
+		a{
+			color: black;
+			text-decoration: none;
+			padding: 5px 5px 5px 5px;
+		}
+
+		a:hover{
+			color: white;
+			text-decoration: underline;
+			padding: 5px 5px 5px 5px;
+		}
+
+		li{
+			list-style-type: none;
+		}
+
+		#menu{
+			margin-top: 35px;
+			margin-bottom: -25px;
+			display: inline-block;
+			padding: 10px 10px 10px 10px;
+		}
+
+		#knil1{
+			display: inline-block;
+			padding: 15px 15px 15px 15px;
+			background-color: #1E90FF;
+			border-radius: 15px;
+		}
+
+		#knil2{
+			display: inline-block;
+			padding: 15px 15px 15px 15px;
+			background-color: #1E90FF;
+			border-radius: 15px;
+		}
+
+		#knil3{
+			display: inline-block;
+			padding: 15px 15px 15px 15px;
+			background-color: #1E90FF;
+			border-radius: 15px;
+		}
+
 	</style>
 
 </head>
 <body>
-	
-	<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-  	<a class="navbar-brand" style="cursor:default;">WebWiki</a>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Главная <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Языки</a></li>
-        <li><a href="#">Фреймворки</a></li>
-        <li><a href="#">Разработка</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Помощь</a></li>
-        <li><a href="#">О сайте</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-<div class = "container">
-	<div class="jumbotron" style="color: black; text-align: left;margin-top: 20px;">
-        <h1>Добро Пожаловать</h1><br>
-        <p class="lead"><b>WebWiki</b> - это сайт посвященный веб-разработке и веб-программистам. Здесь вы найдете инструменты которыми пользуются веб-программисты, а так же поймете как разрабатывать сайт и сможете сами сделать свой сайт.</p>
-      </div>
-    	<div class = "col-lg-2">
+	<div class = "container">
 
-    	</div>
+		<div class = "col-lg-12">
 
-    	<div class = "col-lg-8">
-    		<h1>Что такое веб-программирование?</h1>
-    		<p>Веб-программирование - раздел программирования, ориентированный на разработку веб-приложений. Языки веб-программирования - это языки, которые в основном предназначены для работы с веб-технологиями.</p>
-    			<hr>
-    		<h1>Разделы веб-программирования</h1>
-    		<p>Веб-программирование принято разделять на два раздела Front-End и Back-End, что же это за разделы?</p>
-    		<p><li><b>Front-End - это создание клиентской части сайта. Front-end разработчик занимается версткой шаблона сайта и созданием пользовательского интерфейса. Обычно front-end разработчик - это мастер на все руки. Он просто обязан обладать талантом дизайнера, быть искусным верстальщиком и хорошим программистом.</b></li></p>
-    		<p><li><b>Back-End - это разработчик web-программирования, занимающийся написанием содержательной части программы, логики ее действий. Он программирует и создает серверную часть веб-сайта, обеспечивает вывод необходимого контента из базы данных в нужных участках web-сайта, автоматизирует процесс сбора информации о пользователях, защищает сайт от взлома и всевозможных DoS и DDoS атак. В зависимости от поставленной задачи, использует также C# и ASP.NET или добавляет к этому Javascript, а иногда и другие языки (например, С++ и Python).</b></li></p>
-    			<hr>
-    		<h1>Но кто же такое веб-программист?</h1>
-    		<p>Веб-программист - это такой специалист, деятельность которого тесно связана с «всемирной паутиной». Его задача - это создание ресурсов, которые будут жить и развиваться в сети. Без помощи этого профессионала невозможно реализовать ни один интернет-проект. Он составляет технические задания к сайтам, создает динамические страницы и интерфейсы для баз данных. Если сравнить сайт со зданием, то web-программист – это его архитектор, который, правда, не делает чертежи, а мыслит современными, компьютерными категориями.</p>
-    		
-    	</div>
+			<div id = "menu">
+				<p><li><a id = "link1"><b style = "cursor: pointer;">Мои Увлечения</b></a></li></p>
+				<p><li><a id = "link2"><b style = "cursor: pointer;">Мои Друзья</b></a></li></p>
+				<p><li><a id = "link3"><b style = "cursor: pointer;">Мое Образование</b></a></li></p>
+			</div>
 
-    	<div class = "col-lg-2">
+		</div>
 
-    	</div>
-</div>
+		<div class = "col-lg-12">
+			<h1 style = "font-size: 85px; cursor: pointer;"><b id = "click">Supreme_Boy</b></h1><br>
+			<h1 style = "font-size: 55px;">Добро пожаловать на мой сайт!</h1>
+			<p>Меня зовут <b>Илья Волков</b>, мне 16 лет, я учусь в КРМК "Казанский Радиомеханический Колледж". Люблю слушать музыку, в последнее время меломан. Есть много увлечений, существуют друзья, люблю прогулки. Программирую и пишу сайты, занимаюсь профессионально футболом. Есть информация еще более раскрытая, нажмите на главный заголовок сайта, а дальше все будет понятнее.</p><br>
+		</div>
+
+			<br>
+
+		<div class = "col-lg-12">
+
+			<div id = "knil1">
+				<h1><b>Мои Увлечения</b></h1>
+				<p>У меня в жизни много увлечений, ниже я расскажу вам о некоторых из них, кликайте на те, которые хотели бы почитать</p>
+
+				<h2><li><a id = "prog"><b style = "cursor: pointer;">Программирование</b></a></li></h2>
+
+					<div id = "prog1"> 
+						<p>Я увлекаюсь программированием уже целый год. За это время я выучил и написал множество пргграмм на разных языках, а про сайты я вообще молчу, я с самого начала пишу их каждый день. Я знаю такие языки как:</p>
+							<p><li><a><b>Visual Basic</b></a></li></p>
+							<p><li><a><b>C++</b></a></li></p>
+							<p><li><a><b>JavaScript</b></a></li></p>
+							<p><li><a><b>PHP</b></a></li></p>
+							<p><li><a><b>HTML, CSS</b></a></li></p>
+						<p>Я выбрал нашел себя в такой профессии как <b>Веб - Программист</b>, ведь это просто и интересно создавать разные сайты для всемирной паутины!</p>
+						<p>В школе программировал на Pascal, но быстро его забыл, так как не видел будующего с этим языком и начал изучать другие.</p>
+						<p>Изучал я великое множество языков программирования, но использую не все из них.</p>
+						<hr width = "50%">
+					</div>
+
+				<h2><li><a id = "sport"><b style = "cursor: pointer;">Спорт</b></a></li></h2>
+
+					<div id = "sport1">
+						<p>Я занимаюсь спортом еще с детства. Несколько лет назад, меня отдали на профессиональный футбол, честно говоря не помню какая футбольная школа была у меня первой, но знаю одно, что тогда моя жизнь изменилась.</p>
+						<p>Иногда я бегаю по утрам и вечерам (чаще всего летом), делаю разные упражнения на разные группы мыщц, но в последнее время это стало не так часто, что очень и очень обидно.</p>
+						<p>Сейчас я играю в ДЮСШ "Мирас", которая находиться в городе Казань, на улице Файзи, туда я перешел из ДЮСШ "Вахитовского района" в конце лета 2017 года.</p>
+						<hr width = "50%">
+					</div>
+
+				<h2><li><a id = "mus"><b style = "cursor: pointer;">Музыка</b></a></li></h2>
+
+					<div id = "mus1">
+						<p>Я очень люблю слушать музыку. В моем кармане, будь то лето или зима, всегда лежат наушники. Я слушаю сейчас любую музыку которая мне понравится, но вот совсем недавно, я был рокером. Сейчас я слушаю реп или клубные треки потому, что они поднимают настроение когда его нет.</p>
+					</div>
+
+			</div>
+
+			<div id = "knil2">
+				<h1><b>Мои Друзья</b></h1>
+				<p>У меня много друзей, которые когда нужно смогут мне помочь. Я не буду сейчас перебирать их имена, это останется при мне, просто могу сказать одно, что я их очень люблю и они всегда со мной рядом. Постепенно приходят новые люди, которые через какое либо время становяться моими друзьями, меня это очень радует, но лучше иметь несколько действительно настоящих друзей, чем много таких людей которые совсем никак не подходят под слово друзья, надеюсь вы меня понимаете.</p>		
+			</div>
+
+			<div id = "knil3">
+				<h1><b>Мое Образование</b></h1>
+				<p>В данный момент я учусь в КРМК "Казанский Радиомеханический Колледж", на 1 курсе, 142 группы. Параллельно я занимаюсь программированием, углубленным программированием, как и сайтов так и каких нибудь приложений в целом. Вы подумаете, что же я могу сделать в свои 16 лет? Этот сайт я написал сам, за несколько часов, здесь присутствуют такие языки как: HTML, CSS, JavaScript (JQuery), фреймворк Bootstrap (3.3.7), и запустил его бесплатно через GitHub, думаете каждый ребенок в России в свои 16 может сделать такое? Простите, но я думаю что нет.</p>
+			</div>
+
+		</div>
+
+	</div>
+
+
+<script>
+
+	$("#menu").hide();
+	$("#knil1").hide();
+	$("#knil2").hide();
+	$("#knil3").hide();
+	$("#prog1").hide();
+	$("#mus1").hide();
+	$("#sport1").hide();
+
+	$("#click").click(function(){
+		$("#menu").slideToggle(2000);
+	});
+
+	$("#link1").click(function(){
+		$("#knil1").slideToggle(2000);
+	});
+
+	$("#link2").click(function(){
+		$("#knil2").slideToggle(2000);
+	});
+
+	$("#link3").click(function(){
+		$("#knil3").slideToggle(2000);
+	});
+
+	$("#prog").click(function(){
+		$("#prog1").slideToggle(2000);
+	});
+
+	$("#sport").click(function(){
+		$("#sport1").slideToggle(2000);
+	});
+
+	$("#mus").click(function(){
+		$("#mus1").slideToggle(2000);
+	});
+
+</script>
+
+<footer>
+	<br>
+	<p>Сайт размещается бесплатно с помощью <a href = "https://github.com/"><b>GitHub</b></a> <br> Если вдруг возникнут вопросы, мой вк: <a href = "https://vk.com/metallist23"><img src = "https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/vkontakte-512.png" style = "cursor: pointer; width: 40px; height: 40px; border-radius: 10px;"></a> <br> Казань - 2017 год</p>
+</footer>
+
 </body>
 </html>
