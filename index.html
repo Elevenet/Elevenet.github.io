@@ -16,7 +16,7 @@
 	<style>
 		
 		body{
-			background-image: url("http://www.1366x768.net/large/201209/10889.jpg");
+			background-image: url("http://s1.1zoom.me/b5050/958/Clone_trooper_Star_Wars_Movies_Helmet_518354_1366x768.jpg");
 			-webkit-background-size: cover;
   			-moz-background-size: cover;
   			-o-background-size: cover;
@@ -31,12 +31,12 @@
 		}
 
 		a{
-			color: gray;
+			color: silver;
 			text-decoration: none;
 		}
 
 		a:hover{
-			color: silver;
+			color: gray;
 			text-decoration: none;
 		}
 
@@ -46,6 +46,10 @@
 
 		#glavcont1{
 			margin-top: 75px;
+		}
+
+		#brdr1{
+			padding: 10px 10px 10px 10px;
 		}
 
 	</style>
@@ -71,40 +75,98 @@
 		<div id = "glavcont1">
 
 			<div class = "col-lg-4">
-					
-				<p style = "padding: 5px 5px 5px 5px;"><a id = "link1"><b style = "cursor: pointer;">Спорт</b></a></p>
 
-					<div id = "sport1">
+				<div id = "brdr1">
 						
+						<hr style = "width: 75%;">
+
+						<h3><b>Фильмы</b></h3>
 						
-
-					</div>
-
-				<p style = "padding: 5px 5px 5px 5px;"><a id = "link2"><b style = "cursor: pointer;">Технологии</b></a></p>
-
-					<div id = "tech1">
+						<hr style = "width: 75%;">
 						
+					<p style = "padding: 5px 5px 5px 5px;"><a id = "link1"><b style = "cursor: pointer;">Скрытая угроза</b></a></p>
+
+						<div id = "film1">
+							
+							
+
+						</div>
+
+					<p style = "padding: 5px 5px 5px 5px;"><a id = "link2"><b style = "cursor: pointer;">Атака клонов</b></a></p>
+
+						<div id = "film2">
+							
+							
+
+						</div>
+
+					<p style = "padding: 5px 5px 5px 5px;"><a id = "link3"><b style = "cursor: pointer;">Месть ситхов</b></a></p>
+
+						<div id = "film3">
+							
+							
+
+						</div>
+
+					<p style = "padding: 5px 5px 5px 5px;"><a id = "link4"><b style = "cursor: pointer;">Новая надежда</b></a></p>
+
+						<div id = "film4">
+							
+							
+
+						</div>
 						
+					<p style = "padding: 5px 5px 5px 5px;"><a id = "link5"><b style = "cursor: pointer;">Империя наносит ответный удар</b></a></p>
 
-					</div>
+						<div id = "film5">
+							
+							
 
-				<p style = "padding: 5px 5px 5px 5px;"><a id = "link3"><b style = "cursor: pointer;">Политика</b></a></p>
-
-					<div id = "polit1">
+						</div>
 						
-						
+					<p style = "padding: 5px 5px 5px 5px;"><a id = "link6"><b style = "cursor: pointer;">Возвращение джедая</b></a></p>
 
-					</div>		
+						<div id = "film6">
+							
+							
+
+						</div>
+						
+					<p style = "padding: 5px 5px 5px 5px;"><a id = "link7"><b style = "cursor: pointer;">Пробуждение силы</b></a></p>
+
+						<div id = "film7">
+							
+							
+
+						</div>
+						
+					<p style = "padding: 5px 5px 5px 5px;"><a id = "link8"><b style = "cursor: pointer;">Последние джедаи</b></a></p>
+
+						<div id = "film8">
+							
+							
+
+						</div>	
+
+						<hr style = "width: 75%;">
+
+					<p style = "padding: 5px 5px 5px 5px;"><a id = "help1"><b style = "cursor: pointer;">Помощь</b></a></p>	
+
+						<hr style = "width: 75%;">
+
+				</div>								
 
 			</div>	
 
 			<div class = "col-lg-8">
-				
-				<div>
-					
-					<h1><b>Главные новости</b></h1>
 
-				</div>
+				<div id = "brdr1">
+					
+					<h1><b>Star Wars</b></h1>
+					<p class = "lead">Звёздные войны — культовая фантастическая франшиза в жанре космической оперы, включающая в себя 9 кинофильмов, а также анимационные сериалы, мультфильмы, телефильмы, книги, комиксы, видеоигры, игрушки и прочие произведения, созданные в рамках единой фантастической Вселенной Звёздных войн, задуманной и реализованной американским режиссёром Джорджем Лукасом в конце 1970-х годов и позднее расширенной.</p>
+
+
+				</div>	
 
 			</div>
 
@@ -117,9 +179,14 @@
 	<script>
 		
 		$("#glavcont1").hide();
-		$("#sport1").hide();
-		$("#tech1").hide();
-		$("#polit1").hide();
+		$("#film1").hide();
+		$("#film2").hide();
+		$("#film3").hide();
+		$("#film4").hide();
+		$("#film5").hide();
+		$("#film6").hide();
+		$("#film7").hide();
+		$("#film8").hide();
 
 		$("#click1").click(function(){
 			$("#headcont1").hide(3000);
