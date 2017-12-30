@@ -2,7 +2,7 @@
 <html>
 <head>
 
-	<title>php_test</title>
+	<title>JS_Games</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,290 +16,306 @@
 	<style>
 		
 		body{
-			background-image: url("http://files.padlib.com/soft/8bbfc330a8e565b406791b98ba9a373c/Eiffel-Tower-In-Paris-1366x768.jpg");
+			background-image: url("https://oboi.ws/wallpapers/14_3630_oboi_lesnaja_doroga_1366x768.jpg");
 			background-attachment: fixed;
-			color: white;
 			font-size: 21px;
 			text-align: center;
 		}
 
-		a{
-			color: silver;
-			text-decoration: none;
-		}
-
-		a:hover{
-			color: white;
-			text-decoration: none;
-		}
-
-		a:active{
-			color: gray;
-			text-decoration: none;
-		}
-
-		a:link{
-			color: gray;
-			text-decoration: none;
-		}
-
-		a:visited{
-			color: gray;
-			text-decoration: none;
-		}
-
 		#head1{
-			background-color: black;
-			border-radius: 17px;
-			opacity: 0.7;
+			opacity: 0.8;
+			background-color: silver;
+			color: black;
 			padding: 55px 55px 55px 55px;
-			margin-top: 100px;
-
+			border-radius: 17px;
+			margin-top: 15px;
 		}
 
 		#head2{
-			background-color: black;
-			opacity: 0.7;
+			opacity: 0.8;
+			background-color: silver;
+			color: black;
 			padding: 55px 55px 55px 55px;
+			border-radius: 17px;
+			margin-top: 15px;
+		}
+
+		#head3{
+			opacity: 0.8;
+			background-color: silver;
+			color: black;
+			padding: 55px 55px 55px 55px;
+			border-radius: 17px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+		a{
+			text-decoration: none;
+			color: black;
+		}
+
+		a:hover{
+			text-decoration: none;
+			color: black;
+		}
+
+		#link1{
+			cursor: pointer;
+			background-color: gray;
+			color: black;
+			padding: 10px 10px 10px 10px;
+			border-radius: 17px;
+		}
+
+		#link1:hover{
+			cursor: pointer;
+			background-color: white;
+			color: black;
+			padding: 10px 10px 10px 10px;
+			border-radius: 17px;
+		}
+
+		#link1:active{
+			cursor: pointer;
+			background-color: black;
+			color: white;
+			padding: 10px 10px 10px 10px;
+			border-radius: 17px;
+		}
+
+		#link2{
+			cursor: pointer;
+			background-color: gray;
+			color: black;
+			padding: 10px 10px 10px 10px;
+			border-radius: 17px;
+		}
+
+		#link2:hover{
+			cursor: pointer;
+			background-color: white;
+			color: black;
+			padding: 10px 10px 10px 10px;
+			border-radius: 17px;
+		}
+
+		#link2:active{
+			cursor: pointer;
+			background-color: black;
+			color: white;
+			padding: 10px 10px 10px 10px;
+			border-radius: 17px;
+		}
+
+		#link3{
+			cursor: pointer;
+			background-color: gray;
+			color: black;
+			padding: 10px 10px 10px 10px;
+			border-radius: 17px;
+		}
+
+		#link3:hover{
+			cursor: pointer;
+			background-color: white;
+			color: black;
+			padding: 10px 10px 10px 10px;
+			border-radius: 17px;
+		}
+
+		#link3:active{
+			cursor: pointer;
+			background-color: black;
+			color: white;
+			padding: 10px 10px 10px 10px;
+			border-radius: 17px;
+		}
+
+		#link4{
+			cursor: pointer;
+			background-color: gray;
+			color: black;
+			padding: 10px 10px 10px 10px;
+			border-radius: 17px;
+		}
+
+		#link4:hover{
+			cursor: pointer;
+			background-color: white;
+			color: black;
+			padding: 10px 10px 10px 10px;
+			border-radius: 17px;
+		}
+
+		#link4:active{
+			cursor: pointer;
+			background-color: black;
+			color: white;
+			padding: 10px 10px 10px 10px;
+			border-radius: 17px;
 		}
 
 		#cont1{
-			background-color: black;
-			opacity: 0.7;
+			opacity: 0.8;
+			background-color: silver;
+			color: black;
 			padding: 55px 55px 55px 55px;
+			display: inline-block;
+			border-radius: 17px;
+			margin-top: 15px;
+			margin-bottom: 15px;
 		}
 
 		#cont2{
-			background-color: black;
-			opacity: 0.7;
+			opacity: 0.8;
+			background-color: silver;
+			color: black;
 			padding: 55px 55px 55px 55px;
-			border-bottom-left-radius: 17px;
-			border-bottom-right-radius: 17px;
+			display: inline-block;
+			border-radius: 17px;
+			margin-top: 15px;
+			margin-bottom: 15px;
 		}
 
-		input{
-			background-color: silver;
-			color: black;
+		#back0{
+			opacity: 0.8;
+			background-color: black;
+			color: white;
+			padding: 55px 55px 55px 55px;
+			display: inline-block;
 			border-radius: 17px;
-			padding: 10px 10px 10px 10px;
+			margin-top: 15px;
+			margin-bottom: 15px;
 		}
 
-		input:hover{
-			background-color: gray;
-			color: black;
+		#back1{
+			opacity: 0.8;
+			background-color: black;
+			color: white;
+			padding: 55px 55px 55px 55px;
+			display: inline-block;
 			border-radius: 17px;
-			padding: 10px 10px 10px 10px;
-		}
-
-		input:active{
-			background-color: gray;
-			color: black;
-			border-radius: 17px;
-			padding: 10px 10px 10px 10px;
-		}
-
-		input:link{
-			background-color: gray;
-			color: black;
-			border-radius: 17px;
-			padding: 10px 10px 10px 10px;
-		}
-
-		input:visited{
-			background-color: gray;
-			color: black;
-			border-radius: 17px;
-			padding: 10px 10px 10px 10px;
-		}
-
-		button{
-			cursor: pointer;
-			background-color: silver;
-			color: black;
-			border-radius: 17px;
-			padding: 10px 10px 10px 10px;
-		}
-
-		button:hover{
-			cursor: pointer;
-			background-color: gray;
-			color: black;
-			border-radius: 17px;
-			padding: 10px 10px 10px 10px;
-		}
-
-		button:active{
-			cursor: pointer;
-			background-color: gray;
-			color: black;
-			border-radius: 17px;
-			padding: 10px 10px 10px 10px;
-		}
-
-		button:link{
-			cursor: pointer;
-			background-color: gray;
-			color: black;
-			border-radius: 17px;
-			padding: 10px 10px 10px 10px;
-		}
-
-		button:visited{
-			cursor: pointer;
-			background-color: gray;
-			color: black;
-			border-radius: 17px;
-			padding: 10px 10px 10px 10px;
+			margin-top: 15px;
+			margin-bottom: 15px;
 		}
 
 	</style>
-	
+
 </head>
 <body>
 
 	<div class = "container">
 
-		<div class = "col-lg-12">
-			
-			<div id = "head1">
-				
-				<h1 style = "font-size: 75px;"><b>php_test</b></h1><br>
-				<p class = "lead">Портал Front - End разработки и всех программистов сферы Web</p>
-					<hr style = "width: 50%;">
-						<form method = "post">
-							<p class = "lead"><b>Для того что бы попасть на портал, заполните поля</b></p>
-
-							<p class = "lead"><input type = "text" name = "text1" placeholder = "Введите ваше имя" required id = "text1"></p>
-							<p class = "lead"><input type = "email" name = "email1" placeholder = "Введите ваш email" required id = "email1"></p>
-							<p class = "lead"><input type = "password" name = "password1" placeholder = "Пароль" required id = "password1"></p>
-
-							<button onclick = "myPortal()" id = "lool"><b>Открыть портал</b></button>
-						</form>
-
-						<?php 
-
-							if(isset($_POST['text1'])){
-
-								$name = $_POST['text1'];
-								$mail = $_POST['email1'];
-								$pass = $_POST['password1'];
-
-								$ham = fopen('names.txt', 'a');
-								$mah = fopen('names.txt', 'a');
-								$dle = fopen('names.txt', 'a');
-
-								fwrite($ham,$name."   : Имя пользователя ;;; ");
-								fwrite($mah,$mail."   : Email пользователя ;;;   ");
-								fwrite($dle,$pass."   : Пароль пользователя ;;;   ");
-
-								fclose($ham);
-								fclose($mah);
-								fclose($dle);	
-
-							}	
-
-						?>
-
-			</div>
-
-		</div>
-
-		<div class = "col-lg-12">
-			
-			<div id = "head2">
-				
-				<h1 style = "font-size: 50px;"><b>php_test</b></h1><br>
-
-				<a onclick = "myLink1()" style = "cursor: pointer; padding: 10px 10px 10px 10px;"><b>Link 1</b></a>
-				<a onclick = "myLink2()" style = "cursor: pointer; padding: 10px 10px 10px 10px;"><b>Link 2</b></a>
-				<a onclick = "myLink3()" style = "cursor: pointer; padding: 10px 10px 10px 10px;"><b>Link 3</b></a>
-
-			</div>
-
-		</div>
-
-		<div class = "col-lg-12">
 		
-			<div id = "cont1">
+		<div class = "col-lg-12">
+
+			<div id = "back0">
+				
+				<div id = "head1">
 					
-				<h3><a onclick="myLink4()" style = "cursor: pointer;">Front-End и Back-End разработка, что это?</a></h3>
+					<h1><b>JS_Games</b></h1>
+					<p class = "lead">Добро пожаловать на портал мини-игр</p>
 
-					<div id = "Front1">
+				</div>
 
-						<hr>
-						<p class = "lead">Front-End и Back-End — термины в программной инженерии, которые различают согласно принципу разделения ответственности между внешним представлением и внутренней реализацией соответственно. Front-end — интерфейс взаимодействия между пользователем и основной программно-аппаратной частью (back-end). Front-end и back-end могут быть распределены между одной или несколькими системами. В архитектуре программного обеспечения может быть много уровней между аппаратной частью и конечным пользователем, каждый из которых также может иметь front-end и back-end. Front end — это абстракция, которая предоставляет пользовательский интерфейс. Например, в проектировании программного обеспечения, Model-View-Controller архитектура обеспечивает front-end и back-end между базой данных, компонентами обработки данных и пользователями. Разделение между программными системами на front-end и back-end упрощает разработку. Front (или клиент) сторона — это любой компонент, управляемый пользователем, а back (сервер) сторона выполняется на сервере. Путаница возникает, когда кто-то должен применить front-end изменения к файлам на стороне сервера. Большинство веб-дизайнеров и верстальщиков, к примеру, не должны знать особенностей работы сервера во время вёрстки сайта и, наоборот, back-end программистам не требуется глубоких знаний HTML и CSS.</p>
-						<hr>
+				<div id = "head2">
+					
+					<p class = "lead"><b>Здесь вы найдете множество мини-игр, все об популярных играх и немного видео о играх!</b></p>
 
-					</div>
+				</div>
+
+				<div id = "head3">
+					
+					<p class = "lead"><b>Что бы открыть портал, кликай по ссылке ниже!</b></p>
+					<p><a id = "link1"><b>Открыть портал</b></a></p>
+
+				</div>
+
+			</div>	
+
+		</div>	
+
+		<div id = "back1">
+
+			<div class = "col-lg-12">
+				
+				<div id = "cont0">
+					
+					<h1><b>JS_Games</b></h1><br>
+
+					<a id = "link2" style = "margin: 10px 10px 10px 10px;"><b>Link 1</b></a>
+					<a id = "link3" style = "margin: 10px 10px 10px 10px;"><b>Link 2</b></a>
+					<a id = "link4" style = "margin: 10px 10px 10px 10px;"><b>Link 3</b></a>
+
+				</div><br>
 
 			</div>
 
-			<div id = "cont2">
-						
-				<h3><a onclick="myLink5()" style = "cursor: pointer;">Какие языки нужны для этой сферы?</a></h3>
+			<div class = "col-lg-6">
+				
+				<div id = "cont1">
+					
+					<h1>Добро Пожаловать!</h1>
 
-					<div id = "Front2">
-						
-						<hr>	
-						<p class = "lead"></p>
-						<hr>
-
-					</div>
+				</div>
 
 			</div>
 
-		</div>
+			<div class = "col-lg-6">
+				
+				<div id = "cont2">
+					
+					<h1>Приветствуем вас!</h1>
 
-	</div>	
+				</div>
+
+			</div>
+
+		</div>	
+
+	</div>
 
 
 
 	<script>
 		
+		$("#head1").hide();
 		$("#head2").hide();
+		$("#head3").hide();
 		$("#cont1").hide();
 		$("#cont2").hide();
-		$("#Front1").hide();
-		$("#Front2").hide();
+		$("#back1").hide();
+		$("#back0").hide();
 
-		function myPortal() {
+		$("body").ready(function(){
 
-			var a = getElementById("text1");
-			var b = getElementById("email1");
-			var c = getElementById("password1");
+			$("#back0").show(3000);
+			$("#head1").delay(3000);
+			$("#head1").slideToggle(5000);
+			$("#head2").delay(5000);
+			$("#head2").slideToggle(5000);
+			$("#head3").delay(5000);
+			$("#head3").slideToggle(8000);
 
-			if(a !== " " && b !== " " && c !== " "){
+		});
 
-				$("#lool").click(function(){
+		$("#link1").click(function(){
 
-					$("#head1").hide(3000);
-					$("#head2").show(6000);
-					$("#cont1").show(6000);
-					$("#cont2").show(6000);
+			$("#back0").hide(8000);
+			$("#head1").hide(5000);
+			$("#head2").hide(6000);
+			$("#head3").hide(7000);
 
-				});
+			$("#back1").delay(5000);
 
-			}
+			$("#back1").slideToggle(6000);
+			$("#cont1").slideToggle(3000);
+			$("#cont2").slideToggle(3000);
 
-			else{
-				alert("Пожалуйста заполните все поля!!!");
-			}
-
-		}
-
-		function myLink4(){
-
-			$("#Front1").show(3000);
-
-		}
-
-		function myLink5(){
-
-			$("#Front2").show(3000);
-
-		}
+		});
 
 	</script>
-	
+
 </body>
 </html>
