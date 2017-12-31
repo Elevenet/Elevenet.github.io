@@ -3,6 +3,7 @@
 <head>
 
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<title>Supreme_Films</title>
 
@@ -251,6 +252,28 @@
 			margin-bottom: 15px;
 		}
 
+		#back3{
+			opacity: 0.8;
+			background-color: black;
+			color: white;
+			padding: 55px 55px 55px 55px;
+			display: inline-block;
+			border-radius: 17px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+		#back4{
+			opacity: 0.8;
+			background-color: black;
+			color: white;
+			padding: 55px 55px 55px 55px;
+			display: inline-block;
+			border-radius: 17px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
 		#film1{
 			cursor: pointer;
 			border-radius: 17px;
@@ -431,6 +454,115 @@
 			border-radius: 17px;
 		}
 
+		#exit5{
+			cursor: pointer;
+			background-color: gray;
+			color: black;
+			padding: 10px 10px 10px 10px;
+			border-radius: 17px;
+		}
+
+		#exit5:hover{
+			cursor: pointer;
+			background-color: white;
+			color: black;
+			padding: 10px 10px 10px 10px;
+			border-radius: 17px;
+		}
+
+		#exit5:active{
+			cursor: pointer;
+			background-color: black;
+			color: white;
+			padding: 10px 10px 10px 10px;
+			border-radius: 17px;
+		}
+
+		#exit6{
+			cursor: pointer;
+			background-color: gray;
+			color: black;
+			padding: 10px 10px 10px 10px;
+			border-radius: 17px;
+		}
+
+		#exit6:hover{
+			cursor: pointer;
+			background-color: white;
+			color: black;
+			padding: 10px 10px 10px 10px;
+			border-radius: 17px;
+		}
+
+		#exit6:active{
+			cursor: pointer;
+			background-color: black;
+			color: white;
+			padding: 10px 10px 10px 10px;
+			border-radius: 17px;
+		}
+
+		#z1{
+			background-color: silver;
+			color: black;
+			padding: 55px 55px 55px 55px;
+			display: inline-block;
+			border-radius: 17px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+		#m1{
+			background-color: silver;
+			color: black;
+			padding: 55px 55px 55px 55px;
+			display: inline-block;
+			border-radius: 17px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+		#o1{
+			background-color: silver;
+			color: black;
+			padding: 55px 55px 55px 55px;
+			display: inline-block;
+			border-radius: 17px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+		#zf1{
+			cursor: pointer;
+			border-radius: 17px;
+		}
+
+		#zf1:hover{
+			cursor: pointer;
+			width: 215px;
+			height: 315px;
+			border: 3px solid white;
+			border-radius: 17px;
+		}
+
+		#zf1:active{
+			cursor: pointer;
+			width: 215px;
+			height: 315px;
+			border: 3px solid black;
+			border-radius: 17px;
+		}
+
+		#fz1{
+			background-color: silver;
+			color: black;
+			padding: 55px 55px 55px 55px;
+			display: inline-block;
+			border-radius: 17px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
 	</style>
 
 </head>
@@ -574,7 +706,68 @@
 
 			</div>
 
-		</div>	
+		</div>
+
+		<div id = "back3">
+			
+			<div id = "zarub0">
+				
+				<div id = "z1">
+
+					<a id = "exit6" style = "margin: 10px 10px 10px 10px;"><b>Назад к главной</b></a>
+					
+					<h1><b>Зарубежные фильмы</b></h1>
+
+					<hr>
+	
+					<h3><b>Иллюзия Обмана 2</b></h3>
+					<img src="https://pic.kino.mail.ru/6746053/" width="200px" height="300px" id = "zf1">
+
+					<hr>
+
+				</div>
+
+			</div>
+
+			<div id = "otech0">
+				
+				<div id = "o1">
+					
+					
+
+				</div>
+
+			</div>
+
+			<div id = "mult0">
+				
+				<div id = "m1">
+					
+					
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id = "back4">
+			
+			<div id = "fz1">
+				
+				<br>
+
+				<a id = "exit5" style = "margin: 10px 10px 10px 10px;"><b>Назад к главной</b></a>
+
+				<br>
+				
+				<h3><b>Иллюзия Обмана 2</b></h3><br>
+				<iframe width="800" height="400" src="https://www.youtube.com/embed/nQK1YXbklqI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+				
+
+			</div>
+
+		</div>
 
 	</div>
 
@@ -590,6 +783,8 @@
 		$("#back1").hide();
 		$("#back0").hide();
 		$("#back2").hide();
+		$("#back3").hide();
+		$("#back4").hide();
 		$("#mlif1").hide();
 		$("#mlif2").hide();
 		$("#mlif3").hide();
@@ -698,6 +893,44 @@
 			$("#back2").delay(3000);
 			$("#back2").hide(5000);
 			$("#back1").delay(5000);
+			$("#back1").show(3000);
+
+		});
+
+		$("#link2").click(function(){
+
+			$("#back1").hide(3000);
+			$("#back3").delay(3000);
+			$("#back3").show(3000);
+			$("#otech0").hide();
+			$("#mult0").hide();
+			$("#zarub0").delay(3000);
+			$("#zarub0").show(3000);
+
+		});
+
+		$("#zf1").click(function(){
+
+			$("#back3").hide(3000);
+			$("#back4").delay(3000);
+			$("#back4").show(3000);
+			$("#fz1").delay(3000);
+			$("#fz1").show(3000);
+
+		});
+
+		$("#exit5").click(function(){
+
+			$("#back4").hide(3000);
+			$("#back3").delay(3000);
+			$("#back3").show(3000);
+
+		});
+
+		$("#exit6").click(function(){
+
+			$("#back3").hide(3000);
+			$("#back1").delay(3000);
 			$("#back1").show(3000);
 
 		});
