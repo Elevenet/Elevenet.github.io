@@ -2,722 +2,82 @@
 <html>
 <head>
 
-	<meta charset="UTF-8">
-
-	<title>Supreme_Films</title>
+	<title>Попробуй зарегестрируйся!</title>
+	<meta charset="utf-8">
+	<meta name = "viewport" content = "width=device-width">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
 	<style>
 		
 		body{
-			background-image: url("https://oboi.ws/wallpapers/14_3630_oboi_lesnaja_doroga_1366x768.jpg");
-			background-attachment: fixed;
-			font-size: 21px;
 			text-align: center;
+			font-size: 21px;
 		}
 
-		 iframe{
-     		width: 100%;
-      		height: 100vh;
-      		margin: 0 auto;
-    	}
-
-		#head1{
-			background-color: silver;
-			color: black;
-			padding: 55px 55px 55px 55px;
-			border-radius: 17px;
-			margin-top: 15px;
-		}
-
-		#head2{
-			background-color: silver;
-			color: black;
-			padding: 55px 55px 55px 55px;
-			border-radius: 17px;
-			margin-top: 15px;
-		}
-
-		#head3{
-			background-color: silver;
-			color: black;
-			padding: 55px 55px 55px 55px;
-			border-radius: 17px;
-			margin-top: 15px;
-			margin-bottom: 15px;
+		#head0{
+			margin-top: 100px;
 		}
 
 		a{
-			text-decoration: none;
+			background-color: silver;
+			padding: 10px 10px 10px 10px;
+			margin: 10px 10px 10px 10px;
+			border-radius: 17px;
+			display: inline-block;
+			border: 3px solid silver;
 			color: black;
+			text-decoration: none;
+			cursor: pointer;
 		}
 
 		a:hover{
+			background-color: gray;
+			padding: 10px 10px 10px 10px;
+			margin: 10px 10px 10px 10px;
+			border-radius: 17px;
+			display: inline-block;
+			border: 3px solid gray;
+			color: black;
 			text-decoration: none;
-			color: black;
+			cursor: pointer;
 		}
 
-		#link1{
-			cursor: pointer;
-			background-color: gray;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#link1:hover{
-			cursor: pointer;
-			background-color: white;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#link1:active{
-			cursor: pointer;
+		a:active{
 			background-color: black;
 			color: white;
 			padding: 10px 10px 10px 10px;
+			margin: 10px 10px 10px 10px;
 			border-radius: 17px;
-		}
-
-		#link2{
-			cursor: pointer;
-			background-color: gray;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#link2:hover{
-			cursor: pointer;
-			background-color: white;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#link2:active{
-			cursor: pointer;
-			background-color: black;
-			color: white;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#link3{
-			cursor: pointer;
-			background-color: gray;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#link3:hover{
-			cursor: pointer;
-			background-color: white;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#link3:active{
-			cursor: pointer;
-			background-color: black;
-			color: white;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#link4{
-			cursor: pointer;
-			background-color: gray;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#link4:hover{
-			cursor: pointer;
-			background-color: white;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#link4:active{
-			cursor: pointer;
-			background-color: black;
-			color: white;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#cont1{
-			background-color: silver;
-			color: black;
-			padding: 55px 55px 55px 55px;
 			display: inline-block;
-			border-radius: 17px;
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-
-		#cont2{
-			background-color: silver;
-			color: black;
-			padding: 55px 55px 55px 55px;
-			display: inline-block;
-			border-radius: 17px;
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-
-		#mlif1{
-			background-color: silver;
-			color: black;
-			padding: 55px 55px 55px 55px;
-			display: inline-block;
-			border-radius: 17px;
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-
-		#mlif2{
-			background-color: silver;
-			color: black;
-			padding: 55px 55px 55px 55px;
-			display: inline-block;
-			border-radius: 17px;
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-
-		#mlif3{
-			background-color: silver;
-			color: black;
-			padding: 55px 55px 55px 55px;
-			display: inline-block;
-			border-radius: 17px;
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-
-		#mlif4{
-			background-color: silver;
-			color: black;
-			padding: 55px 55px 55px 55px;
-			display: inline-block;
-			border-radius: 17px;
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-
-		#back0{
-			opacity: 0.8;
-			background-color: black;
-			color: white;
-			padding: 55px 55px 55px 55px;
-			display: inline-block;
-			border-radius: 17px;
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-
-		#back1{
-			opacity: 0.8;
-			background-color: black;
-			color: white;
-			padding: 55px 55px 55px 55px;
-			display: inline-block;
-			border-radius: 17px;
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-
-		#back2{
-			opacity: 0.8;
-			background-color: black;
-			color: white;
-			padding: 55px 55px 55px 55px;
-			display: inline-block;
-			border-radius: 17px;
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-
-		#back3{
-			opacity: 0.8;
-			background-color: black;
-			color: white;
-			padding: 55px 55px 55px 55px;
-			display: inline-block;
-			border-radius: 17px;
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-
-		#back4{
-			opacity: 0.8;
-			background-color: black;
-			color: white;
-			padding: 55px 55px 55px 55px;
-			display: inline-block;
-			border-radius: 17px;
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-
-		#film1{
-			cursor: pointer;
-			border-radius: 17px;
-		}
-
-		#film1:hover{
-			cursor: pointer;
-			width: 215px;
-			height: 315px;
-			border: 3px solid white;
-			border-radius: 17px;
-		}
-
-		#film1:active{
-			cursor: pointer;
-			width: 215px;
-			height: 315px;
 			border: 3px solid black;
-			border-radius: 17px;
+			text-decoration: none;
+			cursor: pointer;
 		}
 
-		#film2{
-			cursor: pointer;
-			border-radius: 17px;
-		}
-
-		#film2:hover{
-			cursor: pointer;
-			width: 215px;
-			height: 315px;
-			border: 3px solid white;
-			border-radius: 17px;
-		}
-
-		#film2:active{
-			cursor: pointer;
-			width: 215px;
-			height: 315px;
-			border: 3px solid black;
-			border-radius: 17px;
-		}
-
-		#film3{
-			cursor: pointer;
-			border-radius: 17px;
-		}
-
-		#film3:hover{
-			cursor: pointer;
-			width: 215px;
-			height: 315px;
-			border: 3px solid white;
-			border-radius: 17px;
-		}
-
-		#film3:active{
-			cursor: pointer;
-			width: 215px;
-			height: 315px;
-			border: 3px solid black;
-			border-radius: 17px;
-		}
-
-		#film4{
-			cursor: pointer;
-			border-radius: 17px;
-		}
-
-		#film4:hover{
-			cursor: pointer;
-			width: 215px;
-			height: 315px;
-			border: 3px solid white;
-			border-radius: 17px;
-		}
-
-		#film4:active{
-			cursor: pointer;
-			width: 215px;
-			height: 315px;
-			border: 3px solid black;
-			border-radius: 17px;
-		}
-
-		#exit1{
-			cursor: pointer;
-			background-color: gray;
+		input{
+			padding: 10px 10px 10px 10px;
+			margin: 10px 10px 10px 10px;
 			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit1:hover{
-			cursor: pointer;
-			background-color: white;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit1:active{
-			cursor: pointer;
-			background-color: black;
-			color: white;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit2{
-			cursor: pointer;
-			background-color: gray;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit2:hover{
-			cursor: pointer;
-			background-color: white;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit2:active{
-			cursor: pointer;
-			background-color: black;
-			color: white;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit3{
-			cursor: pointer;
-			background-color: gray;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit3:hover{
-			cursor: pointer;
-			background-color: white;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit3:active{
-			cursor: pointer;
-			background-color: black;
-			color: white;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit4{
-			cursor: pointer;
-			background-color: gray;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit4:hover{
-			cursor: pointer;
-			background-color: white;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit4:active{
-			cursor: pointer;
-			background-color: black;
-			color: white;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit5{
-			cursor: pointer;
-			background-color: gray;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit5:hover{
-			cursor: pointer;
-			background-color: white;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit5:active{
-			cursor: pointer;
-			background-color: black;
-			color: white;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit6{
-			cursor: pointer;
-			background-color: gray;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit6:hover{
-			cursor: pointer;
-			background-color: white;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit6:active{
-			cursor: pointer;
-			background-color: black;
-			color: white;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit7{
-			cursor: pointer;
-			background-color: gray;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit7:hover{
-			cursor: pointer;
-			background-color: white;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit7:active{
-			cursor: pointer;
-			background-color: black;
-			color: white;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit8{
-			cursor: pointer;
-			background-color: gray;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit8:hover{
-			cursor: pointer;
-			background-color: white;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit8:active{
-			cursor: pointer;
-			background-color: black;
-			color: white;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit9{
-			cursor: pointer;
-			background-color: gray;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit9:hover{
-			cursor: pointer;
-			background-color: white;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit9:active{
-			cursor: pointer;
-			background-color: black;
-			color: white;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit10{
-			cursor: pointer;
-			background-color: gray;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit10:hover{
-			cursor: pointer;
-			background-color: white;
-			color: black;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#exit10:active{
-			cursor: pointer;
-			background-color: black;
-			color: white;
-			padding: 10px 10px 10px 10px;
-			border-radius: 17px;
-		}
-
-		#z1{
 			background-color: silver;
-			color: black;
-			padding: 55px 55px 55px 55px;
-			display: inline-block;
-			border-radius: 17px;
-			margin-top: 15px;
-			margin-bottom: 15px;
 		}
 
-		#m1{
+		input:hover{
+			padding: 10px 10px 10px 10px;
+			margin: 10px 10px 10px 10px;
+			color: black;
+			background-color: white;
+		}
+
+		input:active{
+			padding: 10px 10px 10px 10px;
+			margin: 10px 10px 10px 10px;
+			color: black;
 			background-color: silver;
-			color: black;
-			padding: 55px 55px 55px 55px;
-			display: inline-block;
-			border-radius: 17px;
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-
-		#o1{
-			background-color: silver;
-			color: black;
-			padding: 55px 55px 55px 55px;
-			display: inline-block;
-			border-radius: 17px;
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-
-		#zf1{
-			cursor: pointer;
-			border-radius: 17px;
-		}
-
-		#zf1:hover{
-			cursor: pointer;
-			width: 215px;
-			height: 315px;
-			border: 3px solid white;
-			border-radius: 17px;
-		}
-
-		#zf1:active{
-			cursor: pointer;
-			width: 215px;
-			height: 315px;
-			border: 3px solid black;
-			border-radius: 17px;
-		}
-
-		#of1{
-			cursor: pointer;
-			border-radius: 17px;
-		}
-
-		#of1:hover{
-			cursor: pointer;
-			width: 215px;
-			height: 315px;
-			border: 3px solid white;
-			border-radius: 17px;
-		}
-
-		#of1:active{
-			cursor: pointer;
-			width: 215px;
-			height: 315px;
-			border: 3px solid black;
-			border-radius: 17px;
-		}
-
-		#mf1{
-			cursor: pointer;
-			border-radius: 17px;
-		}
-
-		#mf1:hover{
-			cursor: pointer;
-			width: 215px;
-			height: 315px;
-			border: 3px solid white;
-			border-radius: 17px;
-		}
-
-		#mf1:active{
-			cursor: pointer;
-			width: 215px;
-			height: 315px;
-			border: 3px solid black;
-			border-radius: 17px;
-		}
-
-		#fz1{
-			background-color: silver;
-			color: black;
-			padding: 55px 55px 55px 55px;
-			display: inline-block;
-			border-radius: 17px;
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-
-		#fo1{
-			background-color: silver;
-			color: black;
-			padding: 55px 55px 55px 55px;
-			display: inline-block;
-			border-radius: 17px;
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-
-		#fm1{
-			background-color: silver;
-			color: black;
-			padding: 55px 55px 55px 55px;
-			display: inline-block;
-			border-radius: 17px;
-			margin-top: 15px;
-			margin-bottom: 15px;
 		}
 
 	</style>
@@ -726,516 +86,161 @@
 <body>
 
 	<div class = "container">
-
 		
-		<div class = "col-lg-12">
+		<div id = "head0"></div>
 
-			<div id = "back0">
-				
-				<div id = "head1">
-					
-					<h1><b>Supreme_Films</b></h1>
-					<p class = "lead"><b>Добро пожаловать на портал лучших фильмов в hd качестве</b></p>
-
-				</div>
-
-				<div id = "head2">
-					
-					<p class = "lead"><b>Здесь вы найдете множество популярных и новых фильмов, зарубежных фильмов, отечественных фильмов и мультфильмов!</b></p>
-					<p class = "lead"><b>Мой портал удобен, вы не будете долго искать фильм который вы хотели бы посмотреть, все фильмы находятся в своих жанрах, так что просто вспомните названия фильма и смотрите его в лучшем качестве!</b></p>
-
-				</div>
-
-				<div id = "head3">
-					
-					<p class = "lead"><b>Что бы открыть портал, кликай по ссылке ниже!</b></p>
-					<p><a id = "link1"><b>Открыть портал</b></a></p>
-
-				</div>
-
-			</div>	
-
-		</div>	
-
-		<div id = "back1">
-
-			<div class = "col-lg-12">
-				
-				<div id = "cont0">
-					
-					<h1><b>Supreme_Films</b></h1><br>
-
-					<p class = "lead"><a id = "link2" style = "margin: 15px 15px 15px 15px;"><b>Зарубежные фильмы</b></a></p><br>
-					<p class = "lead"><a id = "link3" style = "margin: 15px 15px 15px 15px;"><b>Отечественные фильмы</b></a></p><br>
-					<p class = "lead"><a id = "link4" style = "margin: 15px 15px 15px 15px;"><b>Мультфильмы</b></a></p>
-
-				</div><br>
-
-			</div>
-
-			<div class = "col-lg-6">
-				
-				<div id = "cont1">
-					
-					<h1>Популярные фильмы</h1>
-					<hr>
-					<h3><b>Такси 4</b></h3>
-					<img src="https://pic.kino.mail.ru/737540/" width="200px" height="300px" id = "film1">
-					<hr>
-					<h3><b>Легенда № 17</b></h3>
-					<img src="http://sdushorkvc.ru/upload/image/%D0%BB%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4%D0%B0%E2%84%9617.jpg" width="200px" height="300px" id = "film3">
-					<hr>
-
-				</div>
-
-			</div>
-
-			<div class = "col-lg-6">
-				
-				<div id = "cont2">
-					
-					<h1>Популярные мультфильмы</h1>
-					<hr>
-					<h3><b>Альфа и Омега</b></h3>
-					<img src="https://im0-tub-ru.yandex.net/i?id=d465bacaee0a5a720201e94797f99a47-l&n=13" width="200px" height="300px" id = "film2">
-					<hr>
-					<h3><b>Артур и Минипуты</b></h3>
-					<img src="http://image.tmdb.org/t/p/original/rhlUSUaMOQw3oRbDPQgYWN9grUo.jpg" width="200px" height="300px" id = "film4">
-					<hr>
-
-				</div>
-
-			</div>
+		<div id = "head1">
+			
+			<h1><b>Добро пожаловать на портал регистра!</b></h1>
 
 		</div>
 
-		<div id = "back2">
+		<div id = "head2">
 			
-			<div id = "mlif1">
+			<a id = "link1"><b>Регистрация</b></a>
 
-				<br>
-
-				<a id = "exit1" style = "margin: 10px 10px 10px 10px;"><b>Назад к главной</b></a>
-
-				<br>
-				
-				<h3><b>Такси 4</b></h3><br>
-				<iframe width="800" height="400" src="https://www.youtube.com/embed/iWXt-DRhuPo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
-			</div>
-
-			<div id = "mlif2">
-				
-				<br>
-
-				<a id = "exit2" style = "margin: 10px 10px 10px 10px;"><b>Назад к главной</b></a>
-
-				<br>
-				
-				<h3><b>Альфа и Омега</b></h3><br>
-				<iframe width="800" height="400" src="https://www.youtube.com/embed/DumKKlnkW98" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
-			</div>
-
-			<div id = "mlif3">
-				
-				<br>
-
-				<a id = "exit3" style = "margin: 10px 10px 10px 10px;"><b>Назад к главной</b></a>
-
-				<br>
-				
-				<h3><b>Легенда № 17</b></h3><br>
-				<iframe width="800" height="400" src="https://www.youtube.com/embed/MhPDLsYrUPw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
-			</div>
-
-			<div id = "mlif4">
-				
-				<br>
-
-				<a id = "exit4" style = "margin: 10px 10px 10px 10px;"><b>Назад к главной</b></a>
-
-				<br>
-				
-				<h3><b>Артур и Минипуты</b></h3><br>
-				<iframe width="800" height="400" src="https://www.youtube.com/embed/pmA4xwoMb_Y" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
-			</div>
+		</div>
+			
+		<div id = "click1">
+			
+			<h3><b>Регистрация</b></h3>
+			<p class = "lead">Для регистрации вам должно быть 18 лет!</p>
+			<hr width="50%" color = "black">
+			<input type="text" name="text1" id = "text1" placeholder="Введите ваше имя"><br>
+			<input type="text" name="text2" id = "text2" placeholder="Введите сколько вам лет"><br>
+			<input type="email" name="email1" id = "email1" placeholder="Введите ваш email"><br>
+			<input type="password" name="pass1" id = "pass1" placeholder="Введите ваш пароль"><br>
+			<a id = "but1"><b>Отправить</b></a>
+			<hr width="50%" color = "black">
 
 		</div>
 
-		<div id = "back3">
+		<div id = "content1">
 			
-			<div id = "zarub0">
-				
-				<div id = "z1">
-
-					<a id = "exit6" style = "margin: 10px 10px 10px 10px;"><b>Назад к главной</b></a>
-					
-					<h1><b>Зарубежные фильмы</b></h1>
-
-					<hr>
-	
-					<h3><b>Иллюзия Обмана 2</b></h3>
-					<img src="https://pic.kino.mail.ru/6746053/" width="200px" height="300px" id = "zf1">
-
-					<hr>
-
-				</div>
-
-			</div>
-
-			<div id = "otech0">
-				
-				<div id = "o1">
-					
-					<a id = "exit7" style = "margin: 10px 10px 10px 10px;"><b>Назад к главной</b></a>
-					
-					<h1><b>Отечественные фильмы</b></h1>
-
-					<hr>
-	
-					<h3><b>Выпускной</b></h3>
-					<img src="https://pic.kino.mail.ru/3277262/" width="200px" height="300px" id = "of1">
-
-					<hr>
-
-
-				</div>
-
-			</div>
-
-			<div id = "mult0">
-				
-				<div id = "m1">
-					
-					<a id = "exit8" style = "margin: 10px 10px 10px 10px;"><b>Назад к главной</b></a>
-					
-					<h1><b>Мультфильмы</b></h1>
-
-					<hr>
-	
-					<h3><b>Артур и месть Урдалака</b></h3>
-					<img src="https://pic.kino.mail.ru/1197740/" width="200px" height="300px" id = "mf1">
-
-					<hr>
-
-				</div>
-
-			</div>
-
-		</div>
-
-		<div id = "back4">
-			
-			<div id = "fz1">
-				
-				<br>
-
-				<a id = "exit5" style = "margin: 10px 10px 10px 10px;"><b>Назад к главной</b></a>
-
-				<br>
-				
-				<h3><b>Иллюзия Обмана 2</b></h3><br>
-				<iframe width="800" height="400" src="https://www.youtube.com/embed/nQK1YXbklqI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-				
-
-			</div>
-
-			<div id = "fo1">
-				
-				<br>
-
-				<a id = "exit9" style = "margin: 10px 10px 10px 10px;"><b>Назад к главной</b></a>
-
-				<br>
-				
-				<h3><b>Выпускной</b></h3><br>
-				<iframe width="854" height="480" src="https://www.youtube.com/embed/k7PsrsvavgY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
-			</div>
-
-			<div id = "fm1">
-				
-				<br>
-
-				<a id = "exit10" style = "margin: 10px 10px 10px 10px;"><b>Назад к главной</b></a>
-
-				<br>
-				
-				<h3><b>Артур и месть Урдалака</b></h3><br>
-				<iframe width="800" height="400" src="https://www.youtube.com/embed/_pFOsV2s05M" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
-			</div>
+			<h1><b>Как вам у меня?</b></h1>
+			<p class = "lead">Мой сайт очень умен! Он способен сам все запоминать и понимать! Я надеюсь вы уже заметили это когда регистрировались!</p>
 
 		</div>
 
 	</div>
 
 
-
 	<script>
 		
-		$("#head1").hide();
-		$("#head2").hide();
-		$("#head3").hide();
-		$("#cont1").hide();
-		$("#cont2").hide();
-		$("#back1").hide();
-		$("#back0").hide();
-		$("#back2").hide();
-		$("#back3").hide();
-		$("#back4").hide();
-		$("#mlif1").hide();
-		$("#mlif2").hide();
-		$("#mlif3").hide();
-		$("#mlif4").hide();
+		window.onload = function(){
 
-		$("body").ready(function(){
+			$("#click1").hide();
+			$("#content1").hide();
 
-			$("#back0").show(3000);
-			$("#head1").delay(3000);
-			$("#head1").slideToggle(5000);
-			$("#head2").delay(5000);
-			$("#head2").slideToggle(5000);
-			$("#head3").delay(5000);
-			$("#head3").slideToggle(8000);
+			var sub1 = document.getElementById("link1");
 
-		});
+				sub1.onclick = function(){
 
-		$("#link1").click(function(){
+					$("#click1").show(3000);
 
-			$("#back0").hide(8000);
-			$("#head1").hide(5000);
-			$("#head2").hide(6000);
-			$("#head3").hide(7000);
+				}
 
-			$("#back1").delay(5000);
+			var input1 = document.getElementById("text1");
+			var input2 = document.getElementById("text2");
+			var input3 = document.getElementById("email1");
+			var input4 = document.getElementById("pass1");
+			var input5 = document.getElementById("but1");
+			var a = 0;
+			var b = 1;
+			var c = 2;
+			var d = 3;
+			var e = 4;
 
-			$("#back1").slideToggle(6000);
-			$("#cont1").slideToggle(3000);
-			$("#cont2").slideToggle(3000);
+				input5.onclick = function(){
 
-		});
+					if(input1.value !== ''){
 
-		$("#film1").click(function(){
+						var a = b;
 
-			$("#back1").hide(3000);
-			$("#back2").delay(1000);
-			$("#back2").show(3000);
-			$("#mlif1").delay(3000);
-			$("#mlif1").show(5000);
+					}
+					else{
 
-		});
+						alert("Заполните поле имени!");
 
-		$("#exit1").click(function(){
+					}
 
-			$("#mlif1").hide(3000);
-			$("#back2").delay(3000);
-			$("#back2").hide(5000);
-			$("#back1").delay(5000);
-			$("#back1").show(3000);
+					if(input2.value !== ''){
 
-		});
+						if(input2.value >= 18){
 
-		$("#film2").click(function(){
+							var a = c;
 
-			$("#back1").hide(3000);
-			$("#back2").delay(3000);
-			$("#back2").show(5000);
-			$("#mlif2").delay(5000);
-			$("#mlif2").show(5000);
+						}
+						else{
 
-		});
+							alert("Вам нет 18 лет, вы не проходите регистрацию!");
 
-		$("#exit2").click(function(){
+						}
 
-			$("#mlif2").hide(3000);
-			$("#back2").delay(3000);
-			$("#back2").hide(5000);
-			$("#back1").delay(5000);
-			$("#back1").show(3000);
 
-		});
+					}
+					else{
 
-		$("#film3").click(function(){
+						alert("Введите пожалуйста сколько вам лет!");
 
-			$("#back1").hide(3000);
-			$("#back2").delay(3000);
-			$("#back2").show(5000);
-			$("#mlif3").delay(5000);
-			$("#mlif3").show(5000);
+					}
 
-		});
+					if(input3.value !== ''){
 
-		$("#exit3").click(function(){
+						var a = d;
 
-			$("#mlif3").hide(3000);
-			$("#back2").delay(3000);
-			$("#back2").hide(5000);
-			$("#back1").delay(5000);
-			$("#back1").show(3000);
+					}
+					else{
 
-		});
+						alert("Введите ваш email!");
 
-		$("#film4").click(function(){
+					}
 
-			$("#back1").hide(3000);
-			$("#back2").delay(1000);
-			$("#back2").show(5000);
-			$("#mlif4").delay(1000);
-			$("#mlif4").show(5000);
+					if(input4.value !== ''){
 
-		});
+						var a = e;
 
-		$("#exit4").click(function(){
+					}
+					else{
 
-			$("#mlif4").hide(3000);
-			$("#back2").delay(3000);
-			$("#back2").hide(5000);
-			$("#back1").delay(5000);
-			$("#back1").show(3000);
+						alert("Введите пароль!");
 
-		});
+					}
 
-		$("#link2").click(function(){
+					if(a == 4){
 
-			$("#back1").hide(3000);
-			$("#back3").delay(3000);
-			$("#back3").show(3000);
-			$("#otech0").hide();
-			$("#mult0").hide();
-			$("#zarub0").delay(3000);
-			$("#zarub0").show(3000);
+						if(input2.value >= 18){
 
-		});
+							alert("Добро пожаловать, " + input1.value + " ! ");
 
-		$("#zf1").click(function(){
+								var d = new Date();
 
-			$("#back3").hide(3000);
-			$("#back4").delay(3000);
-			$("#back4").show(3000);
-			$("#fo1").hide();
-			$("#fm1").hide();
-			$("#fz1").delay(3000);
-			$("#fz1").show(3000);
+								var a = d.getHours();
+								var b = d.getMinutes();
+								var c = d.getSeconds();
 
-		});
+								alert(" Сейчас время  ( " + a + " : " + b + " : " + c + " )  Удачного вам дня! ");
 
-		$("#exit5").click(function(){
+								$("#click1").hide(3000);
+								$("#head1").delay(3000);
+								$("#head2").delay(3000);
+								$("#head1").hide(3000);
+								$("#head2").hide(3000);
+								$("#content1").delay(4000);
+								$("#content1").show(4000);
 
-			$("#back4").hide(3000);
-			$("#otech0").hide();
-			$("#mult0").hide();
-			$("#back3").delay(3000);
-			$("#back3").show(3000);
+						}
 
-		});
+					}
+					else{
 
-		$("#exit6").click(function(){
+						alert("Вы не проходите регистрацию!");
 
-			$("#back3").hide(3000);
-			$("#back1").delay(3000);
-			$("#back1").show(3000);
+					}
 
-		});
+				}	
 
-		$("#link3").click(function(){
-
-			$("#back1").hide(3000);
-			$("#back3").delay(3000);
-			$("#back3").show(3000);
-			$("#zarub0").hide();
-			$("#mult0").hide();
-			$("#otech0").delay(3000);
-			$("#otech0").show(3000);
-
-		});
-
-		$("#mf1").click(function(){
-
-			$("#back3").hide(3000);
-			$("#back4").delay(3000);
-			$("#back4").show(3000);
-			$("#fz1").hide();
-			$("#fo1").hide();
-			$("#fm1").delay(3000);
-			$("#fm1").show(3000);
-
-		});
-
-		$("#exit7").click(function(){
-
-			$("#back3").hide(3000);
-			$("#back1").delay(3000);
-			$("#back1").show(3000);
-
-		});
-
-		$("#exit9").click(function(){
-
-			$("#back4").hide(3000);
-			$("#back3").delay(3000);
-			$("#back3").show(3000);
-			$("#mult0").hide();
-			$("#zarub0").hide();
-			$("#otech0").delay(3000);
-			$("#otech0").show(3000);
-
-		});
-
-		$("#mf1").click(function(){
-
-			$("#back3").hide(3000);
-			$("#back4").delay(3000);
-			$("#back4").show(3000);
-			$("#fz1").hide();
-			$("#fo1").hide();
-
-		});
-
-		$("#exit8").click(function(){
-
-			$("#back3").hide(3000);
-			$("#back1").delay(3000);
-			$("#back1").show(3000);
-
-		});
-
-		$("#exit10").click(function(){
-
-			$("#back4").hide(3000);
-			$("#back3").delay(3000);
-			$("#back3").show(3000);
-			$("#zarub0").hide();
-			$("#otech0").hide();
-
-		});
-
-		$("#link4").click(function(){
-
-			$("#back1").hide(3000);
-			$("#back3").delay(3000);
-			$("#back3").show(3000);
-			$("#zarub0").hide();
-			$("#otech0").hide();
-			$("#mult0").delay(3000);
-			$("#mult0").show(3000);
-
-		});
-
-		$("#of1").click(function(){
-
-			$("#back3").hide(3000);
-			$("#back4").delay(3000);
-			$("#back4").show(3000);
-			$("#fo1").delay(3000);
-			$("#fo1").show(3000);
-			$("#fz1").hide();
-			$("#fm1").hide();
-
-		});
+		};
 
 	</script>
 
