@@ -28,7 +28,7 @@
 		a{
 			background-color: silver;
 			padding: 10px 10px 10px 10px;
-			margin: 10px 10px 10px 10px;
+			margin: 15px 15px 15px 15px;
 			border-radius: 17px;
 			display: inline-block;
 			border: 3px solid silver;
@@ -40,7 +40,7 @@
 		a:hover{
 			background-color: gray;
 			padding: 10px 10px 10px 10px;
-			margin: 10px 10px 10px 10px;
+			margin: 15px 15px 15px 15px;
 			border-radius: 17px;
 			display: inline-block;
 			border: 3px solid gray;
@@ -53,7 +53,7 @@
 			background-color: black;
 			color: white;
 			padding: 10px 10px 10px 10px;
-			margin: 10px 10px 10px 10px;
+			margin: 15px 15px 15px 15px;
 			border-radius: 17px;
 			display: inline-block;
 			border: 3px solid black;
@@ -98,21 +98,38 @@
 		
 			<div id = "head0"></div>
 
+				<div id = "hide1">
+					
+					<!--LiveInternet counter--><script type="text/javascript">
+					document.write("<a href='//www.liveinternet.ru/click' "+
+					"target=_blank><img src='//counter.yadro.ru/hit?t11.1;r"+
+					escape(document.referrer)+((typeof(screen)=="undefined")?"":
+					";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+					screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+					";h"+escape(document.title.substring(0,150))+";"+Math.random()+
+					"' alt='' title='LiveInternet: показано число просмотров за 24"+
+					" часа, посетителей за 24 часа и за сегодня' "+
+					"border='0' width='88' height='31'><\/a>")
+					</script><!--/LiveInternet-->	
+
+				</div>
+
 			<div id = "head1">
 				
-				<h1><b>Добро пожаловать на познавательный портал Ильи Волкова</b></h1>
+				<h1><b>Добро пожаловать на увлекательный портал Go Portal!</b></h1>
+				<p class = "lead">Для того, что бы серфить на моем сайте, пройди регистрацию</p>
 
 			</div>
 
 			<div id = "head2">
 				
-				<a id = "link1"><b>Зарегистрируйся!</b></a>
+				<a id = "link1"><b>Регистрация</b></a>
 
 			</div>
 				
 			<div id = "click1">
 				
-				<h3><b>Регистрация</b></h3>
+				<h3><b>Go Portal!</b></h3>
 				<hr width="50%" color = "black">
 				<input type="text" name="text1" id = "text1" placeholder="Введите ваше имя"><br>
 				<input type="text" name="text2" id = "text2" placeholder="Введите сколько вам лет"><br>
@@ -128,10 +145,16 @@
 				<h1><b>Ну что же, приступим!</b></h1>
 				<p class = "lead"><b>Сейчас я попорядку расскажу вам, какие интересные функции присутствуют на этом сайте!</b></p>
 				<p id = "str1">1. Вы можете пользоваться профессиональным калькулятором! Ниже есть кнопка ' Калькулятор '</p>
+				<p id = "str1">2. Вы можете поработать с датами! Кликайте по кнопке ' Даты ' что бы увидеть все функции дат!</p>
 
-				<hr>
+				<hr width="50%">
 
 				<a id = "calc1"><b>Калькулятор</b></a>
+				<a id = "dats1"><b>Даты</b></a>
+
+				<hr width="50%">
+
+				<a href="https://vk.com/metallist23" target="_blank"><b>Мой ВК</b></a>
 
 			</div>
 				
@@ -149,7 +172,33 @@
 				<a id = "met1"><b>Умножить</b></a>
 				<a id = "met2"><b>Поделить</b></a>
 				<a id = "met3"><b>Деление по модулю</b></a>
-				<a id = "met4"><b>Корень числа</b></a>
+				<a id = "met4"><b>Квадратный корень числа</b></a>
+				<a id = "met5"><b>Число PI</b></a>
+				<a id = "met6"><b>Рандомное число</b></a>
+				<a id = "met7"><b>Число e</b></a>
+				<a id = "met8"><b>Округление числа</b></a>
+
+			</div>
+
+			<div id = "openDats1">
+				
+				<a id = "ret2"><b>Назад к главной</b></a>
+				<a id = "help2"><b>Помощь</b></a>
+
+				<hr width="50%">
+
+				<h1><b>Даты</b></h1><br>
+
+				<a id = "dat1"><b>Время</b></a>
+				<a id = "dat2"><b>Часы</b></a>
+				<a id = "dat3"><b>Минуты</b></a>
+				<a id = "dat4"><b>Секунды</b></a>
+				<a id = "dat8"><b>Миллисекунды</b></a>
+				<a id = "dat5"><b>День недели</b></a>
+				<a id = "dat6"><b>Месяц</b></a>
+				<a id = "dat7"><b>Год</b></a>
+
+				<hr width="50%">
 
 			</div>
 
@@ -162,9 +211,11 @@
 		
 		window.onload = function(){
 
+			$("#hide1").hide();
 			$("#click1").hide();
 			$("#content1").hide();
 			$("#openCalc1").hide();
+			$("#openDats1").hide();
 
 			var sub1 = document.getElementById("link1");
 
@@ -297,7 +348,7 @@
 
 				sub4.onclick = function(){
 
-					prompt("Окно помощи! Напишите вашу проблему");
+					alert("Окно помощи! На этой страничке присутствует калькулятор, я думаю здесь и так все просто, что вам нужно, это лишь вбить свои значения в поля ввода и посчитать что нужно, простите за то что нет плюса и минуса, я подумал, что эти простые знаки не так нужны, я делал более умный калькулятор. Если возникнут вопросы, то возвращаясь на главную страницу вы найдете ссылку на мою страничку вконтакте, хорошего дня!");
 
 				}
 
@@ -308,6 +359,8 @@
 				var met2 = document.getElementById("met2");
 				var met3 = document.getElementById("met3");
 				var met4 = document.getElementById("met4");
+				var met5 = document.getElementById("met5");
+				var met6 = document.getElementById("met6");
 
 				met1.onclick = function(){
 
@@ -368,6 +421,164 @@
 					}
 
 				}
+
+				met5.onclick = function(){
+
+					alert(Math.PI);
+
+				}
+
+				met6.onclick = function(){
+
+					alert(Math.floor(Math.random()*9.9999));
+
+				}
+
+				var clk1 = document.getElementById("dats1");
+
+					clk1.onclick = function(){
+
+						$("#content1").hide(3000);
+						$("#openDats1").delay(3000);
+						$("#openDats1").show(3000);
+
+					}
+
+				var ret2 = document.getElementById("ret2");
+				var help2 = document.getElementById("help2");
+
+					ret2.onclick = function(){
+
+						$("#openDats1").hide(3000);
+						$("#content1").delay(3000);
+						$("#content1").show(3000);
+
+					}
+
+					help2.onclick = function(){
+
+						alert("Окно помощи! На этой страничке вы видите несколько кнопочек, каждая кнопка выполняет свою функцию, выберете нужное вам и нажмите на кнопку, появится окно с выводом значения!");
+
+					}
+
+				var dat1 = document.getElementById("dat1");
+				
+					dat1.onclick = function(){
+
+						var d = new Date();
+
+						var a = d.getHours();
+						var b = d.getMinutes();
+						var c = d.getSeconds();
+
+						alert("Текущее время ( " + a + " : " + b + " : " + c + " ) ");
+
+					}
+
+				var dat2 = document.getElementById("dat2");
+				var dat3 = document.getElementById("dat3");
+				var dat4 = document.getElementById("dat4");
+
+					dat2.onclick = function(){
+
+						var d = new Date();
+
+						var a = d.getHours();
+
+						alert("Текущий час ( " + a + " ) ");
+
+					}
+
+					dat3.onclick = function(){
+
+						var d = new Date();
+
+						var a = d.getMinutes();
+
+						alert("Текущее количество минут ( " + a + " ) ");
+
+					}	
+
+					dat4.onclick = function(){
+
+						var d = new Date();
+
+						var a = d.getSeconds();
+
+						alert("Текущее количество секунд ( " + a + " ) ");
+
+					}
+
+				var dat5 = document.getElementById("dat5");
+
+					dat5.onclick = function(){
+
+						var d = new Date();
+
+						var a = [ "Воскресенье" , "Понедельник" , "Вторник" , "Среда" , "Четверг" , "Пятница" , "Суббота" ];
+
+						alert("Сегодня - " + a[d.getDay()]);
+
+					}
+
+				var dat6 = document.getElementById("dat6");
+				
+					dat6.onclick = function(){
+
+						var d = new Date();
+
+						var a = [ "Январь" , "Февраль" , "Март" , "Апрель" , "Май" , "Июнь" , "Июль" , "Август" , "Сентябрь" , "Октябрь" , "Ноябрь" , "Декабрь" ];
+
+						alert("Сегодня - " + a[d.getMonth()]);
+
+					}	
+
+				var dat7 = document.getElementById("dat7");
+				
+					dat7.onclick = function(){
+
+						var d = new Date();
+
+						alert("Год - " + d.getFullYear());
+
+					}
+
+				var dat8 = document.getElementById("dat8");
+				
+					dat8.onclick = function(){
+
+						var d = new Date();
+
+						var a = d.getMilliseconds();
+
+						alert("Текущее количество миллисекунд ( " + a + " ) ");
+
+					}	
+
+				var met7 = document.getElementById("met7");
+				
+					met7.onclick = function(){
+
+						alert(Math.E);
+
+					}	
+
+				var met8 = document.getElementById("met8");
+				
+					met8.onclick = function(){
+
+						if(input6.value !== '' || input7.value !== ''){
+
+							alert(Math.round(input6.value || input7.value));
+
+						}
+						else{
+
+							alert("Введите хотя бы одно число в любое поле ввода!");
+
+						}
+
+					}			
 
 		};
 
