@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-	<title>Go Portal!</title>
-	<meta charset="utf-8">
+	
+	<meta charset="UTF-8">
 	<meta name = "viewport" content = "width=device-width">
+
+	<title>questbook</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -12,577 +13,271 @@
 
   	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
-	<style>
-		
+  	<style>
+  		
 		body{
-			text-align: center;
-			font-size: 21px;
+
 			background-color: black;
 			color: white;
+			text-align: center;
+			font-size: 22px;
+
 		}
 
-		#head0{
-			margin-top: 100px;
+		#glav1{
+
+			background-color: white;
+			color: black;
+			padding: 20px 20px 20px 20px;
+			margin: 50px 50px 50px 50px;
+			border-radius: 17px;
+
 		}
 
 		a{
-			background-color: silver;
-			padding: 10px 10px 10px 10px;
-			margin: 15px 15px 15px 15px;
-			border-radius: 17px;
-			display: inline-block;
-			border: 3px solid silver;
+
 			color: black;
-			text-decoration: none;
+			text-decoration: underline;
+			text-decoration-color: black;
+			padding: 15px 15px 15px 15px;
+			margin: 30px 30px 30px 30px;
 			cursor: pointer;
+
 		}
 
 		a:hover{
-			background-color: gray;
-			padding: 10px 10px 10px 10px;
-			margin: 15px 15px 15px 15px;
-			border-radius: 17px;
-			display: inline-block;
-			border: 3px solid gray;
-			color: black;
-			text-decoration: none;
+
+			color: gray;
+			text-decoration: underline;
+			text-decoration-color: gray;
+			padding: 15px 15px 15px 15px;
+			margin: 30px 30px 30px 30px;
 			cursor: pointer;
+
 		}
 
 		a:active{
-			background-color: black;
-			color: white;
-			padding: 10px 10px 10px 10px;
-			margin: 15px 15px 15px 15px;
-			border-radius: 17px;
-			display: inline-block;
-			border: 3px solid black;
-			text-decoration: none;
+
+			color: red;
+			text-decoration: underline;
+			text-decoration-color: red;
+			padding: 15px 15px 15px 15px;
+			margin: 30px 30px 30px 30px;
 			cursor: pointer;
+
 		}
 
-		input{
-			padding: 10px 10px 10px 10px;
-			margin: 10px 10px 10px 10px;
-			color: black;
-			background-color: silver;
-		}
-
-		input:hover{
-			padding: 10px 10px 10px 10px;
-			margin: 10px 10px 10px 10px;
-			color: black;
-			background-color: white;
-		}
-
-		input:active{
-			padding: 10px 10px 10px 10px;
-			margin: 10px 10px 10px 10px;
-			color: black;
-			background-color: silver;
-		}
-
-		#str1{
-			padding: 5px 5px 5px 5px;
-			margin: 5px 5px 5px 5px;
-		}
-
-	</style>
+  	</style>
 
 </head>
 <body>
 
 	<div class = "container">
-
-		<div class = "col-lg-12">
 		
-			<div id = "head0"></div>
+		<div class = "col-lg-12">
+			
+			<div id = "glav1">
 
-				<div id = "hide1">
+				<div id = "cont1">
+				
+					<h1><b>Quest Book</b></h1>
+					<p class = "lead">Добро пожаловать на книжный квест, если ты готов к нему, нажимай Я готов!</p>
+					<a id = "click1"><b>Я готов!</b></a><br>
+
+				</div>	
+
+				<div id = "cont2">
 					
-					<!--LiveInternet counter--><script type="text/javascript">
-					document.write("<a href='//www.liveinternet.ru/click' "+
-					"target=_blank><img src='//counter.yadro.ru/hit?t11.1;r"+
-					escape(document.referrer)+((typeof(screen)=="undefined")?"":
-					";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
-					screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
-					";h"+escape(document.title.substring(0,150))+";"+Math.random()+
-					"' alt='' title='LiveInternet: показано число просмотров за 24"+
-					" часа, посетителей за 24 часа и за сегодня' "+
-					"border='0' width='88' height='31'><\/a>")
-					</script><!--/LiveInternet-->	
+					<h1><b>Выбери свой режим игры</b></h1><br>
+					<a id = "game1"><b>Ужасы</b></a>
+					<a id = "game2"><b>Фантастика</b></a>
+					<a id = "game3"><b>Драма</b></a><br>
 
 				</div>
 
-			<div id = "head1">
-				
-				<h1><b>Добро пожаловать на увлекательный портал Go Portal!</b></h1>
-				<p class = "lead">Для того, что бы серфить на моем сайте, пройди регистрацию</p>
+				<div id = "games1">
+					
+					<h1><b>Ужасы</b></h1>
+					<p class = "lead">Вам предстоит очень трудная и жуткая дорога, вы с друзьями в психиатрической больнице, расследуете дело об недавном убийстве репортера американской газеты, которого убили совсем не люди, ведь ни один нормальный человек, ни за что не зайдет в это место...</p>
+					<a id = "go1"><b>Начать</b></a><br>
+
+				</div>
+
+				<div id = "games10">
+					
+					<h1><b>Психиатрическая больница</b></h1>
+					<p class = "lead"><b>Нас было трое, трое американских парней, которых департамент полиции направил на расследование дела об убийстве одного репортера, но почему это назвали убийством? Ведь его тело так и не нашли.</b></p>
+					<p class = "lead"><b>Сторож сказал нам, что наш репортер заходил с главного входа, мы с ребятами не долго думая пошли на главный вход. Здание псих больницы было просто огромным, но очень похожим на старенькие пяти этажные дома, но с огромным главным входом. На данный момент 2010 год, здание было уже закрыто в 1998 из за паранормальных явлений в этой больнице, само здание было построено еще в начале 1950 годов.</b></p>
+					<p class = "lead"><b>Лари,Макс и я, Гарри, зашли через главный вход в эту больницу, перед нами находился ресепшен и два коридора, которые ведут в левую сторону здания и в правую сторону здания, никто так и не знал куда пошел тогда репортер и куда стоило идти нам, на данный момент время было 23:11, в это время по словам сторожа, начинают бродить духи. Лари спросил, куда нам пойти, на лево или на право? На что ответил я...</b></p>
+					<a id = "left1"><b>На лево</b></a>
+					<a id = "right1"><b>На право</b></a><br>
+
+				</div>
+
+				<div id = "games10left">
+					
+					<p class = "lead"><b>Пойдем на лево! И мы пошли в левую сторону здания.</b></p>
+					<p class = "lead"><b>Как только мы прошли несколько шагов, мы услышали шаги на этажах выше, они были просто не человеческие, как будто ноги были чего то большого и мощного, может это нам показалось, но очень нас напугало.</b></p>
+					<p class = "lead"><b>Мы пошли прямо и дошли до лестницы ведущей на верхние этажи, как только мы попытались встать хотя бы на одну ступеньку, тут же выше что то стало спускаться по лестнице прямо на наш этаж, мы подумали , что это и есть наш репортер, но спустя секунду шаги прекратились и нас отбросило к стене и придавило рядом стоящей кроватью... Нужно было выбрать другой путь...</b></p>
+					<a id = "exit1"><b>Вернуться на главную</b></a>
+
+				</div>
+
+				<div id = "games10right">
+					
+					<p class = "lead"><b>Пойдем на право! И мы пошли в правую сторону здания.</b></p>
+					<p class = "lead"><b>Мы шли в одном направлении около минуты, около нас стояли старые кровати, стулья и столики для лекарств, через пару минут мы дошли до двери, на которой было написано Главный врач, мы с ребятами не долго думая открыли дверь и в наши носы остро пронзился запах гнилой плоти. Посветив фонариками по кабинету, мы увидели повешенного человека, он повесился на люстре посередине кабинета, на его халате было написанно Глав Врач.</b></p>
+					<p class = "lead"><b>Мы обошли и посмотрели этот кабинет в течении нескольких минут и нашли кое что лежавшее на столе, на ней была записка этого врача, в которой он написал свое завещание, похоже он повесился сам, но почему, мы так и не поняли.</b></p>
+					<p class = "lead"><b>Мы услышали, что кто то пробежался прямо над нами, похоже на втором этаже кто то есть, но как туда добраться? Только я хотел спросить это у ребят, как тут же за дверью что то тяжелое свалилось с второго этажа, мы побежали и открыли дверь и увидели что потолок обвалился и из большой дыры в потолке кто то смотрел на нас, оно было с красными глазами и через мгновение пропало. Ребята спросили у меня, стоит ли по этим обломкам подняться на второй этаж и проверить, что же там было? Я не долго думая ответил...</b></p>
+					<a id = "left2"><b>Полезли выше!</b></a>
+					<a id = "right2"><b>Может найдем другой вход?</b></a>
+
+				</div>
+
+				<div id = "games10left2">
+					
+					<p class = "lead"><b>Полезли выше!</b></p>
+
+				</div>
+
+				<div id = "games10right2">
+					
+					<p class = "lead"><b>Может найдем другой выход?</b></p>
+
+				</div>
+
+				<div id = "games2">Фантастика</div>
+
+				<div id = "games3">Драма</div>
 
 			</div>
 
-			<div id = "head2">
-				
-				<a id = "link1"><b>Регистрация</b></a>
-
-			</div>
-				
-			<div id = "click1">
-				
-				<h3><b>Go Portal!</b></h3>
-				<hr width="50%" color = "black">
-				<input type="text" name="text1" id = "text1" placeholder="Введите ваше имя"><br>
-				<input type="text" name="text2" id = "text2" placeholder="Введите сколько вам лет"><br>
-				<input type="email" name="email1" id = "email1" placeholder="Введите ваш email"><br>
-				<input type="password" name="pass1" id = "pass1" placeholder="Введите ваш пароль"><br>
-				<a id = "but1"><b>Отправить</b></a>
-				<hr width="50%" color = "black">
-
-			</div>
-
-			<div id = "content1">
-				
-				<h1><b>Ну что же, приступим!</b></h1>
-				<p class = "lead"><b>Сейчас я попорядку расскажу вам, какие интересные функции присутствуют на этом сайте!</b></p>
-				<p id = "str1">1. Вы можете пользоваться профессиональным калькулятором! Ниже есть кнопка ' Калькулятор '</p>
-				<p id = "str1">2. Вы можете поработать с датами! Кликайте по кнопке ' Даты ' что бы увидеть все функции дат!</p>
-
-				<hr width="50%">
-
-				<a id = "calc1"><b>Калькулятор</b></a>
-				<a id = "dats1"><b>Даты</b></a>
-
-				<hr width="50%">
-
-				<a href="https://vk.com/metallist23" target="_blank"><b>Мой ВК</b></a>
-
-			</div>
-				
-			<div id = "openCalc1">
-				
-				<a id = "ret1"><b>Назад к главной</b></a>
-				<a id = "help1"><b>Помощь</b></a>
-
-				<hr width="50%">
-
-				<h1><b>Калькулятор</b></h1><br>
-
-				<input type="text" name="num1" id = "num1" placeholder="Введите первое число"><br>
-				<input type="text" name="num2" id = "num2" placeholder="Введите второе число"><br><br>
-				<a id = "met1"><b>Умножить</b></a>
-				<a id = "met2"><b>Поделить</b></a>
-				<a id = "met3"><b>Деление по модулю</b></a>
-				<a id = "met4"><b>Квадратный корень числа</b></a>
-				<a id = "met5"><b>Число PI</b></a>
-				<a id = "met6"><b>Рандомное число</b></a>
-				<a id = "met7"><b>Число e</b></a>
-				<a id = "met8"><b>Округление числа</b></a>
-
-			</div>
-
-			<div id = "openDats1">
-				
-				<a id = "ret2"><b>Назад к главной</b></a>
-				<a id = "help2"><b>Помощь</b></a>
-
-				<hr width="50%">
-
-				<h1><b>Даты</b></h1><br>
-
-				<a id = "dat1"><b>Время</b></a>
-				<a id = "dat2"><b>Часы</b></a>
-				<a id = "dat3"><b>Минуты</b></a>
-				<a id = "dat4"><b>Секунды</b></a>
-				<a id = "dat8"><b>Миллисекунды</b></a>
-				<a id = "dat5"><b>День недели</b></a>
-				<a id = "dat6"><b>Месяц</b></a>
-				<a id = "dat7"><b>Год</b></a>
-
-				<hr width="50%">
-
-			</div>
-
-		</div>	
+		</div>
 
 	</div>
 
 
+
 	<script>
 		
+		$("#glav1").hide();
+		$("#cont1").hide();
+		$("#cont2").hide();
+		$("#games1").hide();
+		$("#games2").hide();
+		$("#games3").hide();
+		$("#games10").hide();
+		$("#games10left").hide();
+		$("#games10right").hide();
+		$("#games10left2").hide();
+		$("#games10right2").hide();
+
 		window.onload = function(){
 
-			$("#hide1").hide();
-			$("#click1").hide();
-			$("#content1").hide();
-			$("#openCalc1").hide();
-			$("#openDats1").hide();
+			$("#glav1").delay(2000);
+			$("#glav1").show(2000);
+			$("#cont1").show();
 
-			var sub1 = document.getElementById("link1");
+			var click1 = document.getElementById("click1");
 
-				sub1.onclick = function(){
+				click1.onclick = function(){
 
-					$("#click1").show(3000);
-
-				}
-
-			var input1 = document.getElementById("text1");
-			var input2 = document.getElementById("text2");
-			var input3 = document.getElementById("email1");
-			var input4 = document.getElementById("pass1");
-			var input5 = document.getElementById("but1");
-			var a = 0;
-			var b = 1;
-			var c = 2;
-			var d = 3;
-			var e = 4;
-
-				input5.onclick = function(){
-
-					if(input1.value !== ''){
-
-						var a = b;
-
-					}
-					else{
-
-						alert("Заполните поле имени!");
-
-					}
-
-					if(input2.value !== ''){
-
-						if(input2.value >= 18){
-
-							var a = c;
-
-						}
-						else{
-
-							alert("Вам нет 18 лет, вы не проходите регистрацию!");
-
-						}
-
-
-					}
-					else{
-
-						alert("Введите пожалуйста сколько вам лет!");
-
-					}
-
-					if(input3.value !== ''){
-
-						var a = d;
-
-					}
-					else{
-
-						alert("Введите ваш email!");
-
-					}
-
-					if(input4.value !== ''){
-
-						var a = e;
-
-					}
-					else{
-
-						alert("Введите пароль!");
-
-					}
-
-					if(a == 4){
-
-						if(input2.value >= 18){
-
-							alert("Добро пожаловать, " + input1.value + " ! ");
-
-								var d = new Date();
-
-								var a = d.getHours();
-								var b = d.getMinutes();
-								var c = d.getSeconds();
-
-								alert(" Сейчас время  ( " + a + " : " + b + " : " + c + " )  Удачного вам дня! ");
-
-								$("#click1").hide(3000);
-								$("#head1").delay(3000);
-								$("#head2").delay(3000);
-								$("#head1").hide(3000);
-								$("#head2").hide(3000);
-								$("#content1").delay(4000);
-								$("#content1").show(4000);
-
-						}
-
-					}
-					else{
-
-						alert("Вы не проходите регистрацию!");
-
-					}
+					$("#cont1").hide(2000);
+					$("#cont2").delay(2000);
+					$("#cont2").show(2000);
 
 				}
 
-				var sub2 = document.getElementById("calc1");
-				var sub3 = document.getElementById("ret1");
-				var sub4 = document.getElementById("help1");
+			var game1 = document.getElementById("game1");
+			var game2 = document.getElementById("game2");
+			var game3 = document.getElementById("game3");
 
-				sub2.onclick = function(){
+				game1.onclick = function(){
 
-					$("#content1").hide(3000);
-					$("#openCalc1").delay(3000);
-					$("#openCalc1").show(3000);
-
-
-				}
-
-				sub3.onclick = function(){
-
-					$("#openCalc1").hide(3000);
-					$("#content1").delay(3000);
-					$("#content1").show(3000);
+					$("#cont2").hide(2000);
+					$("#games1").delay(2000);
+					$("#games1").show(2000);
 
 				}
 
-				sub4.onclick = function(){
+				game2.onclick = function(){
 
-					alert("Окно помощи! На этой страничке присутствует калькулятор, я думаю здесь и так все просто, что вам нужно, это лишь вбить свои значения в поля ввода и посчитать что нужно, простите за то что нет плюса и минуса, я подумал, что эти простые знаки не так нужны, я делал более умный калькулятор. Если возникнут вопросы, то возвращаясь на главную страницу вы найдете ссылку на мою страничку вконтакте, хорошего дня!");
-
-				}
-
-				var input6 = document.getElementById("num1");
-				var input7 = document.getElementById("num2");
-
-				var met1 = document.getElementById("met1");
-				var met2 = document.getElementById("met2");
-				var met3 = document.getElementById("met3");
-				var met4 = document.getElementById("met4");
-				var met5 = document.getElementById("met5");
-				var met6 = document.getElementById("met6");
-
-				met1.onclick = function(){
-
-					if(input6.value !== '' && input7.value !== ''){
-
-						alert(input6.value * input7.value);
-
-					}
-					else{
-
-						alert("Введите два значения в поля ввода!");
-
-					}
+					$("#cont2").hide(2000);
+					$("#games2").delay(2000);
+					$("#games2").show(2000);
 
 				}
 
-				met2.onclick = function(){
+				game3.onclick = function(){
 
-					if(input6.value !== '' && input7.value !== ''){
+					$("#cont2").hide(2000);
+					$("#games3").delay(2000);
+					$("#games3").show(2000);
 
-						alert(input6.value / input7.value);
+				}	
 
-					}
-					else{
+			var go1 = document.getElementById("go1");
+			
+				go1.onclick = function(){
 
-						alert("Введите два значения в поля ввода!");
+					$("#games1").hide(2000);
+					$("#games10").delay(2000);
+					$("#games10").show(2000);
 
-					}
+				}	
 
-				}
+			var left1 = document.getElementById("left1");
+			var right1 = document.getElementById("right1");
+			
 
-				met3.onclick = function(){
+				left1.onclick = function(){
 
-					if(input6.value !== '' && input7.value !== ''){
-
-						alert(input6.value % input7.value);
-
-					}
-					else{
-
-						alert("Введите два значения в поля ввода!");
-
-					}
-
-				}
-
-				met4.onclick = function(){
-
-					if(input6.value !== '' || input7.value !== ''){
-
-						alert(Math.sqrt(input6.value || input7.value));
-
-					}
-					else{
-
-						alert("Введите хотя бы одно значение в поле ввода!");
-
-					}
+					$("#games10").hide(2000);
+					$("#games10left").delay(2000);
+					$("#games10left").show(2000);
 
 				}
 
-				met5.onclick = function(){
+				right1.onclick = function(){
 
-					alert(Math.PI);
+					$("#games10").hide(2000);
+					$("#games10right").delay(2000);
+					$("#games10right").show(2000);
 
-				}
+				}	
 
-				met6.onclick = function(){
-
-					alert(Math.floor(Math.random()*9.9999));
-
-				}
-
-				var clk1 = document.getElementById("dats1");
-
-					clk1.onclick = function(){
-
-						$("#content1").hide(3000);
-						$("#openDats1").delay(3000);
-						$("#openDats1").show(3000);
-
-					}
-
-				var ret2 = document.getElementById("ret2");
-				var help2 = document.getElementById("help2");
-
-					ret2.onclick = function(){
-
-						$("#openDats1").hide(3000);
-						$("#content1").delay(3000);
-						$("#content1").show(3000);
-
-					}
-
-					help2.onclick = function(){
-
-						alert("Окно помощи! На этой страничке вы видите несколько кнопочек, каждая кнопка выполняет свою функцию, выберете нужное вам и нажмите на кнопку, появится окно с выводом значения!");
-
-					}
-
-				var dat1 = document.getElementById("dat1");
+			var exit1 = document.getElementById("exit1");
 				
-					dat1.onclick = function(){
+				exit1.onclick = function(){
 
-						var d = new Date();
+					$("#games10left").hide(2000);
+					$("#games10").delay(2000);
+					$("#games10").show(2000);
 
-						var a = d.getHours();
-						var b = d.getMinutes();
-						var c = d.getSeconds();
+				}	
 
-						alert("Текущее время ( " + a + " : " + b + " : " + c + " ) ");
+			var left2 = document.getElementById("left2");
+			var right2 = document.getElementById("right2");
 
-					}
+				left2.onclick = function(){
 
-				var dat2 = document.getElementById("dat2");
-				var dat3 = document.getElementById("dat3");
-				var dat4 = document.getElementById("dat4");
+					$("#games10right").hide(2000);
+					$("#games10left2").delay(2000);
+					$("#games10left2").show(2000);
 
-					dat2.onclick = function(){
+				}
 
-						var d = new Date();
+				right2.onclick = function(){
 
-						var a = d.getHours();
+					$("#games10right").hide(2000);
+					$("#games10right2").delay(2000);
+					$("#games10right2").show(2000);
 
-						alert("Текущий час ( " + a + " ) ");
+				}
 
-					}
-
-					dat3.onclick = function(){
-
-						var d = new Date();
-
-						var a = d.getMinutes();
-
-						alert("Текущее количество минут ( " + a + " ) ");
-
-					}	
-
-					dat4.onclick = function(){
-
-						var d = new Date();
-
-						var a = d.getSeconds();
-
-						alert("Текущее количество секунд ( " + a + " ) ");
-
-					}
-
-				var dat5 = document.getElementById("dat5");
-
-					dat5.onclick = function(){
-
-						var d = new Date();
-
-						var a = [ "Воскресенье" , "Понедельник" , "Вторник" , "Среда" , "Четверг" , "Пятница" , "Суббота" ];
-
-						alert("Сегодня - " + a[d.getDay()]);
-
-					}
-
-				var dat6 = document.getElementById("dat6");
-				
-					dat6.onclick = function(){
-
-						var d = new Date();
-
-						var a = [ "Январь" , "Февраль" , "Март" , "Апрель" , "Май" , "Июнь" , "Июль" , "Август" , "Сентябрь" , "Октябрь" , "Ноябрь" , "Декабрь" ];
-
-						alert("Сегодня - " + a[d.getMonth()]);
-
-					}	
-
-				var dat7 = document.getElementById("dat7");
-				
-					dat7.onclick = function(){
-
-						var d = new Date();
-
-						alert("Год - " + d.getFullYear());
-
-					}
-
-				var dat8 = document.getElementById("dat8");
-				
-					dat8.onclick = function(){
-
-						var d = new Date();
-
-						var a = d.getMilliseconds();
-
-						alert("Текущее количество миллисекунд ( " + a + " ) ");
-
-					}	
-
-				var met7 = document.getElementById("met7");
-				
-					met7.onclick = function(){
-
-						alert(Math.E);
-
-					}	
-
-				var met8 = document.getElementById("met8");
-				
-					met8.onclick = function(){
-
-						if(input6.value !== '' || input7.value !== ''){
-
-							alert(Math.round(input6.value || input7.value));
-
-						}
-						else{
-
-							alert("Введите хотя бы одно число в любое поле ввода!");
-
-						}
-
-					}			
-
-		};
+		}
 
 	</script>
-
+	
 </body>
 </html>
